@@ -49,6 +49,7 @@
         "se7enxweb/bcgooglesitemaps": "~1.1.6",
         "se7enxweb/bcwebsitestatistics": "~1.0.4",
         "se7enxweb/bccie": "~1.1.3",
+        "se7enxweb/xrowextract": "~2.3.0",
         "se7enxweb/ezpaypal": "~1.2.0",
         "symfony/polyfill-php73":  "^1.9",
         "zetacomponents/archive": "~1.5",
