@@ -40,7 +40,7 @@ if ( $Day )
 
 $NodeID = (int) $NodeID;
 
-if ( $NodeID < 2 )
+if ( $NodeID < 1 )
 {
     return $Module->handleError( eZError::KERNEL_NOT_FOUND, 'kernel' );
 }
