@@ -17,6 +17,7 @@
         "se7enxweb/eztags": "eztags is a full tagging/taxonomy solution for eZ Publish replacing the simpler builtin ezkeywords datatype",
         "se7enxweb/ezoracle": "ezoracle is a full database solution for eZ Publish replacing the simpler builtin mysql database support",
         "se7enxweb/ezauthorize": "ezauthorize is a feature complete transparent (no redirect away to paypal.com website distractions) payment solution for eZ Publish replacing the simpler builtin ezpaypal redirection based web shop payment support",
+        "se7enxweb/bcurlaliaswithdash": "bcurlaliaswithdash is a feature complete lower case url seo enhancing solution that provides dashes to replace spaces in urls providing simply amazing results in terms of easy to type website urls. Works well with existing content in a website. Try it today and you won't be disappointed.",
         "se7enxweb/xrowmetadata": "xrowmetadata is a feature complete seo enhancing solution that provides simply amazing results in terms of search engine seo optimization of existing content in a website. Try it today and you won't be disappointed."
     },
     "require": {
