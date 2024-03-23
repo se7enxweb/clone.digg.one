@@ -51,6 +51,7 @@
         "se7enxweb/bcwebsitestatistics": "~1.0.4",
         "se7enxweb/bccie": "~1.1.3",
         "se7enxweb/xrowextract": "~2.3.0",
+	"se7enxweb/xrowmetadata": "1.3.5",
         "se7enxweb/ezpaypal": "~1.2.0",
         "se7enxweb/enhancedezbinaryfile": "~4.4.0",
         "se7enxweb/enhancedselection2": "~2.1.1",
