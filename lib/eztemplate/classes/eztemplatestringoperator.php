@@ -462,7 +462,7 @@ class eZTemplateStringOperator
         else if ( ( $paramCount == 1 ) || ( ( $paramCount == 2 ) && isset( $staticValues[1] ) && ( $staticValues[1] == 'xhtml' ) ) )
         {
             $values[] = $parameters[0];
-            $code = "%output% = htmlspecialchars( %1% );\n";
+            $code = "%output% = htmlspecialchars( (string) %1% );\n";
         }
         /* PDF: Type is static, input is not static */
         else if ( ( $paramCount == 2 ) && isset( $staticValues[1] ) && ( $staticValues[1] == 'pdf' ) )
