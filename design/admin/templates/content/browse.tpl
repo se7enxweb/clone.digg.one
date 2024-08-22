@@ -193,7 +193,7 @@
 
 
 {section var=PersistentData show=$browse.persistent_data loop=$browse.persistent_data}
-    <input type="hidden" name="{$PersistentData.key|wash}" value="{$PersistentData.item|wash}" />
+    <input type="hidden" name="{$PersistentData.key|wash}" value="{$PersistentData.item}" />
 {/section}
 
 <input type="hidden" name="BrowseActionName" value="{$browse.action_name}" />
