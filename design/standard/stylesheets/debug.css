@@ -87,7 +87,13 @@ div.debug-toolbar label
 #debug table
 {
     border-collapse: collapse;
+	/* width:100; */
 }
+/* @media screen and (max-width: 1119px) {
+
+
+} */
+
 
 #timingpoints, #timeaccumulators, #debug_resources, #debug_includes, #debug table.debug_resource_usage
 {
@@ -151,7 +157,10 @@ div.debug-toolbar label
 #debug span.debuginfo:hover:after { opacity: 1; }
 
 /* center 1st and two last columns of template usage output */
-#templateusage tr.data td:first-child, #templateusage tr.data td:nth-child(n+5) { text-align: center; }
+#templateusage tr.data td:first-child, #templateusage tr.data td:nth-child(n+5) { 
+	text-align: center; 
+	/* width:100px; */
+}
 
 /* heading colors for misc notices/warnings... */
 #debug tr.notice  td.debugheader span { color: green; }
@@ -160,3 +169,14 @@ div.debug-toolbar label
 #debug tr.debug   td.debugheader span { color: brown; }
 #debug tr.timing  td.debugheader span { color: blue; }
 #debug tr.strict  td.debugheader span { color: purple; }
+
+/* ============ DEBUG CONTENT ============ */
+#debug {
+  overflow: auto;
+}
+
+#debug * {
+  word-break: break-all;
+  /* white-space: pre-wrap; */
+}
+/* ============ DEBUG CONTENT ============ */
