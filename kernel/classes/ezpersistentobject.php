@@ -1520,6 +1520,8 @@ class eZPersistentObject
     public $MementoKey;
     public $MainKey;
     public $WorkflowEventPos;
+    public $LanguageID;
+    public $ContentObjectStateGroupID;
 }
 
 ?>
