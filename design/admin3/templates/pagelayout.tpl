@@ -8,7 +8,7 @@
      $content_edit         = and( $ui_context_edit, eq( $ui_component, 'content' ) )
      $hide_left_menu       = first_set( $module_result.content_info.persistent_variable.left_menu, $content_edit|not )|not
      $hide_right_menu      = first_set( $module_result.content_info.persistent_variable.extra_menu, $ui_context_edit|not )|not
-     $edit_menu_collapsed = cond( ezpreference( 'admin_edit_menu_collapsed' ), 1, 1 )
+     $edit_menu_collapsed = cond( ezpreference( 'admin_edit_menu_collapsed' ), 1, 0 )
      $collapse_left_menu  = cond( ezpreference( 'admin_left_menu_show' ), 1, 1 )
      $collapse_right_menu  = ezpreference( 'admin_right_menu_show' )|not
      $admin_left_size      = ezpreference( 'admin_left_menu_size' )
@@ -129,7 +129,7 @@ YUI(YUI3_config).use('ezcollapsiblemenu', 'event', 'io-ez', function (Y) {
                 // workaround to http://yuilibrary.com/projects/yui3/ticket/2531641
                 // for IE, margin has to be set in px
                 fullStyle: {marginLeft: '-30px'},
-                collapsedStyle: {}
+                collapsedStyle: {marginLeft: '-30px'}
             }],
             callback: function () {
                 var p = 1;
@@ -244,7 +244,7 @@ YUI(YUI3_config).use('ezcollapsiblemenu', 'event', 'io-ez', function (Y) {
 {if $hide_left_menu}
     {include uri='design:page_mainarea.tpl'}
 {else}
-    <div id="maincontent">
+    <div id="maincontent"{if $edit_menu_collapsed} style="margin-left: -34px; margin-right:-8px"{/if}>
     <div id="maincontent-design" class="float-break"><div id="fix">
 
     <div id="path">
