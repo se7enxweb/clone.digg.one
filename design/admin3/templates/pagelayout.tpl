@@ -8,7 +8,8 @@
      $content_edit         = and( $ui_context_edit, eq( $ui_component, 'content' ) )
      $hide_left_menu       = first_set( $module_result.content_info.persistent_variable.left_menu, $content_edit|not )|not
      $hide_right_menu      = first_set( $module_result.content_info.persistent_variable.extra_menu, $ui_context_edit|not )|not
-     $collapse_left_menu  = ezpreference( 'admin_left_menu_show' )
+     $edit_menu_collapsed = cond( ezpreference( 'admin_edit_menu_collapsed' ), 1, 1 )
+     $collapse_left_menu  = cond( ezpreference( 'admin_left_menu_show' ), 1, 1 )
      $collapse_right_menu  = ezpreference( 'admin_right_menu_show' )|not
      $admin_left_size      = ezpreference( 'admin_left_menu_size' )
      $admin_theme          = ezpreference( 'admin_theme' )
@@ -16,8 +17,6 @@
      $search_hash          = array( cond( ezhttp_hasvariable( 'SectionID', 'get' ), ezhttp( 'SectionID', 'get' ) ) )
      $user_hash = concat( $current_user.role_id_list|implode( ',' ), ',', $current_user.limited_assignment_value_list|implode( ',' ) )
 }
-
-{def $edit_menu_collapsed = cond( ezpreference( 'admin_edit_menu_collapsed' ), 1, 1 )}
 
 {if $hide_left_menu}
 {set $collapse_left_menu = true()}
@@ -102,7 +101,7 @@ YUI(YUI3_config).use('ezcollapsiblemenu', 'event', 'io-ez', function (Y) {
             link: '#objectinfo-showhide',
             content: false,
 {/literal}
-            collapsed: "{$edit_menu_collapsed}",
+            collapsed: "{$collapse_left_menu}",
 {literal}
             elements:[{
                 selector: '#leftmenu',
