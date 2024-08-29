@@ -85,7 +85,7 @@ eZ Publish Legacy supports PHP 7.4 -> 8.3 please use the latest version of PHP a
 
 # Installation
 ------------
-Read [doc/INSTALL.md](doc/INSTALL.md) or go to [doc.ezpublishlegacy.se7enx.com/eZ-Publish/Technical-manual/6.0/Installation.html](https://doc.ezpublishlegacy.se7enx.com/eZ-Publish/Technical-manual/6.0/Installation.html)
+Read [doc/INSTALL.md](doc/INSTALL.md) or go to [doc.ezpublishlegacy.se7enx.com/eZ-Publish/Technical-manual/6.x/Installation.html](https://doc.ezpublishlegacy.se7enx.com/eZ-Publish/Technical-manual/6.x/Installation.html)
 
 # Issue tracker
 
