@@ -1,4 +1,4 @@
-## eZ Publish 4 INSTALL
+## eZ Publish 6.0 INSTALL
 
 
 Requirements
@@ -33,11 +33,9 @@ Requirements
    or
    Oracle 11g
 
-### eZ Components:
-   Enterprise edition includes a version of eZ Components that is tested and certified
-   with this version of eZ Publish-
+### Zeta Components:
 
-   The community edition requires the latest stable release of Zeta Components.
+eZ Publish 6.0 edition requires the latest stable release of Zeta Components.
    To install this, you also need to use composer.
 
 
@@ -52,7 +50,7 @@ GitHub Installation Guide
 
 `cd ezpublish; composer install;`
 
-For the rest of the installation steps you will find the installation guide at https://ezpublishdoc.mugo.ca
+For the rest of the installation steps you will find the installation guide at https://doc.ezpublishlegacy.se7enx.com/eZ-Publish/Technical-manual/6.x/Installation.html
 
 
 Composer Installation Guide
@@ -66,4 +64,4 @@ Composer Installation Guide
 
 `cd ezpublish; composer require se7enxweb/ezpublish:v6.0.0;`
 
-For the rest of the installation steps you will find the installation guide at https://ezpublishdoc.mugo.ca
+For the rest of the installation steps you will find the installation guide at https://doc.ezpublishlegacy.se7enx.com/eZ-Publish/Technical-manual/6.x/Installation.html
