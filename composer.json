@@ -18,6 +18,7 @@
         "se7enxweb/ezoracle": "ezoracle is a full database solution for eZ Publish replacing the simpler builtin mysql database support",
         "se7enxweb/ezauthorize": "ezauthorize is a feature complete transparent (no redirect away to paypal.com website distractions) payment solution for eZ Publish replacing the simpler builtin ezpaypal redirection based web shop payment support",
         "se7enxweb/bcurlaliaswithdash": "bcurlaliaswithdash is a feature complete lower case url seo enhancing solution that provides dashes to replace spaces in urls providing simply amazing results in terms of easy to type website urls. Works well with existing content in a website. Try it today and you won't be disappointed.",
+        "se7enxweb/sevenx_valkey": "7x Valkey provides a feature complete simple template operator and class which provides access to valkey and redis compatible nosql databases. php-redis extension required",
         "se7enxweb/xrowmetadata": "xrowmetadata is a feature complete seo enhancing solution that provides simply amazing results in terms of search engine seo optimization of existing content in a website. Try it today and you won't be disappointed."
     },
     "require": {
@@ -58,7 +59,6 @@
         "se7enxweb/birthday": "~1.3.0",
         "se7enxweb/recaptcha": "~1.4.0",
         "se7enxweb/hcaptcha": "~1.0.0",
-        "se7enxweb/sevenx_valkey": "~1.0.1",
         "symfony/polyfill-php73":  "^1.9",
         "zetacomponents/archive": "~1.5",
         "zetacomponents/authentication": "~1.4",
